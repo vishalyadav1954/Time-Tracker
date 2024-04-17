@@ -1,0 +1,27 @@
+<html>
+ <head> 
+  <link href='/timetracker/CSS/style.css' rel='stylesheet'>
+ </head>
+ <body>
+  <form action="/timetracker/user/login/authenticate-user">
+   <table class="ta" cellpadding="15px">
+    <tr>
+     <td>Enter your userid:</td>
+     <td><input type="text" name="userid" value="${id}" class="tb" style="height:2.5vw" required></td>
+    </tr>
+    <tr>
+     <td>Enter your password:</td>
+     <td><input type="password" name="password" class="tb" style="height:2.5vw" required></td>
+    </tr>
+    <tr>
+     <td colspan="2" align="right">
+      <button class="btr" style="background-color:black">Submit</button>
+     </td>
+    </tr>
+   </table>
+  </form>
+  <div class='dvv'>
+   	<label class='la' style="color:red">${msg}</label>
+  </div>
+ </body>
+</html>
